@@ -1,0 +1,123 @@
+/* made by Pradyumna sahu
+copyright 2021 -2022 Codmil™ */
+
+.heading {
+	font-family: var(--font2);
+	font-size: 38px;
+	color: var(--darkColor);
+	height: 10px;
+}
+
+.div1 {
+	max-width: 100%;
+	text-align: center;
+}
+.ngh {
+	height: 800px;
+}
+.ig {
+	position: fixed;
+	top: 90%;
+	right: 1%;
+	width: 50px;
+	height: 50px;
+	z-index: 3;
+}
+.ght5 {
+	height: auto;
+	background-color: whitesmoke;
+}
+.dtg2 {
+	background-image: url('file:///Users/pradyumnasahu/Desktop/4o6vg.svg'); /* change here the link */ 
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 600px;
+	width: 50%;
+	left: 0%;
+	display: inline-flex;
+}
+.ty23 {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	height: 600px;
+	background-color: #fff;
+}
+.rht {
+	background: linear-gradient(to right, #0091e6 0%, #1ba098 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 46px;
+	font-family: sans-serif;
+	position: relative;
+	top: 10%;
+}
+.btq {
+	position: relative;
+	top: 60%;	
+}
+
+@media screen and (max-width: 786px) {
+	.rht {
+		font-size: 40px;
+	}
+	.rtbt {
+		position: relative;
+		left: 120%;
+	}
+}
+@media screen and (min-width: 768px){
+.rtbt {
+	position: relative;
+	left: 132%;
+}
+}
+
+.sed3{
+	background-color: var(--hover);
+	height: auto;
+}
+.er3 {
+	position:relative;
+	top: 5%;
+	align-content: center;
+	text-align: center;
+}
+.hd3 {
+	font-size: 45px;
+	color: var(--darkColor);
+	font-family: var(--fonts);
+
+}
+.imd1 {
+	width: 45%;
+	height: auto;
+	position: relative;
+	left: 5%;
+	top: 25%;
+}
+.im1 {
+	width: 100%;
+	height: auto;
+}
+.imt {
+	font-size: 30px;
+	font-family: var(--font2);
+	color: black;
+	text-align: center;
+	padding: 15px;
+}
+.imd2 {
+	width: 45%;
+	height: auto;
+	position: relative;
+	left: 50%;
+	top: -50%;
+}
+.im2 {
+	width: 100%;
+	height: auto;
+}

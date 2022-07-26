@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="title" content="Stark Industries | Get the best wepoens manufactured here!" />
+	<meta name="discription" content=" jsdfjsdjfsd sfjsdj jesudjfjdsj jsufjsjffisiie dsfjsuejd uesdjjf jsjfu f..... fsfds e d.dfs fsd dswds.sd fsdfsdhhgjfg .sd fsdfjsfmdjf." />
+	<meta name="keywords" content="Stark, industries, codmil" />
+	<meta name="robots" content="noindex" />
+	<meta name="googlebot" content="noindex" />
+
+	<title> Coodmil</title>
+
+
+	<!-- all links goes from here!.....-->
+<script src="https://kit.fontawesome.com/8c56cca563.js" crossorigin="anonymous"></script>
+<link rel="preload" as="image" href="file:///Users/pradyumnasahu/Desktop/main_img.png">
+<link rel="stylesheet" type="text/css" href="file:////Users/pradyumnasahu/Desktop/codmil.css">
+<link rel="icon" type="image/png" href="file:///Users/pradyumnasahu/Desktop/favicon.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" href="file:///Users/pradyumnasahu/Desktop/favicon.png" sizes="64x64">
+<style >
+	:root{
+		--tColor: #0091e6;
+		--t2Color: #1ba098;
+		--reppleColor: #005180;
+		--textColor: #fff;
+		--bodyText:  #000;
+		--hover: #f1f1f1;
+		--darkColor: #141880;
+		--lessDarkColor:#303179;
+
+		--fonts: Arial, Helvetica, sans-serif;
+		--font2: comic sans ms;
+	}
+	body{
+		margin: 0;
+		background-color: var(--tColor);
+	}
+	.navbar{
+		position: sticky;
+		top: 0px;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: var(--tColor);
+		z-index: 1;
+	}
+	.resp {
+		display: block;
+		position: sticky;
+		top: 0px;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: var(--tColor);
+		z-index: 1;
+	}
+	.resp > a {
+		text-decoration: none;
+		text-align: center;
+		color: var(--textColor);
+		font-size: 30px;
+		padding: 10px;
+		transition: 0.6s;
+		background-color: var(--tColor);
+	}
+	.resp > a:hover{
+		background-color: var(--hover);
+		color: var(--darkColor);
+	}
+
+	.navbar > a {
+		text-decoration: none;
+		text-align: center;
+		color: var(--textColor);
+		font-size: 30px;
+		padding: 10px;
+		transition: 0.8s;
+		background-color: var(--tColor);
+	}
+	.navbar a:hover {
+		background-color: var(--hover);
+		color: var(--darkColor);
+	}
+	.fa-bars{
+		position: fixed;
+		top: 0;
+		left: 0;
+		font-size: 36px;
+		display: block;
+		padding: 10px;
+		color: var(--textColor);
+		z-index: 2;
+	}
+	.fa-bars:hover{
+		background-color: var(--hover);
+		color: var(--darkColor);
+	}
+
+
+	/* media and quaries from here..... */
+
+	@media screen and (min-width: 800px) {
+		.navbar {
+		flex-direction: row;
+		}
+		.navbar > a{
+			display: inline-block;
+			padding: 5px;
+			width: 100%;
+		}
+		.navbar > a:hover {
+		transform: rotateX(360deg);
+		}
+		.fa-bars {
+		display: none;
+		}
+		#sec1 {
+			height: 1094px;
+		}
+	}
+	@media screen and (max-width: 800px){
+		.navbar > a:not(.active){
+			display: none;
+		}
+	}
+
+
+
+	.ght {
+		background-color: #f5f5f5;
+		background-image: url('main_img.png');
+		max-width: 100%;
+		height: 500px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		text-align: center;
+		
+	}
+	@media screen and (min-width 1786px) {
+		.ght {
+			height: 100px;
+		}
+	}
+	.butt {
+		color: var(--textColor);
+		background-color: var(--tColor);
+		font-size: 25px;
+		font-family: var(--fonts);
+		border: none;
+		border-radius: 20px;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		transition: 0.8s;
+		cursor: pointer;
+	}
+	.butt:hover {
+		background-color: var(--hover);
+		color: var(--darkColor)
+	}
+	.butt.ripple {
+		position: absolute;
+		border-radius: 50%;
+		transform: scale(0);
+		animation: ripple 600ms linear;
+		background-color: var(--reppleColor);
+	}
+	@keyframes ripple {
+		to {
+			transform: scale(4);
+			opacity: 0;
+		}
+	}
+</style>
+
+
+<script>
+window.onblur = function () { 
+	document.title = 'We miss you...'; 
+}
+
+window.onfocus = function () { 
+	document.title = 'coodmill'; 
+}
+
+function nav() {
+	let x = document.getElementById('navigation');
+	if (x.className == "navbar") {
+		x.className = "resp" ;
+	} else {
+		x.className = "navbar"
+	}
+}
+
+function createRipple(event) {
+ const button = event.currentTarget;
+ const circle = document.createElement("span");
+const diameter = Math.max(button.clientWidth, button.clientHeight);
+const radius = diameter / 2;
+circle.style.width = circle.style.height = `${diameter}px`;
+circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
+circle.style.top = `${event.clientY - (button.offsetTop + radius)}px`;
+circle.classList.add("ripple"); 
+
+const ripple = button.getElementsByClassName("ripple")[0];
+
+if (ripple) {
+  ripple.remove();
+}
+button.appendChild(circle);
+const buttons = document.getElementsByTagName("butt");
+for (const button of buttons) {
+  button.addEventListener("click", createRipple);
+}
+}
+</script>
+</head>
+
+
+<body>
+	<div class="navbar" id="navigation">
+		<a href="" class="active"><i class="fa fa-home"></i></a>
+		<a href="#sec2">HEIR !</a>
+		<a href="">CONTACT</a>
+		<a href="">TEMPALETS</a>
+		<a href="">HELP</a>
+	</div>
+	<div >
+		<a onclick="nav()"><i class="fa fa-bars"></i></a>
+	</div>
+
+	<div>
+		<a href="https://www.instagram.com/trigen_x" target="_blank"><img src="file:///Users/pradyumnasahu/Desktop/instagram-brands.svg" class="ig"></a>
+	</div>
+ 
+<section id="sec1" class="ght">
+	<div class="div1">
+		<span class="heading">Create your site that attracts viewers and that you're proud of !</span>
+	</div>
+		
+</section>
+
+<section id="jk2" class="ght5">
+	<div class="dtg2">
+		<div class="ty23">
+			<span class="rht">A new way of designing the web with powerfull security</span>
+		</div>
+		<div class="rtbt">
+		<button class="butt btq" onclick="document.location='#jk3'"><b>Check out</b></button>
+	</div>
+	</div>	
+</section>
+
+<section id="jk3" class="sed3">
+	<div class="er3"><span class="hd3">Designs that Inspires</span></div><br>
+	<div class="imd1"><img src="file:///Users/pradyumnasahu/Desktop/drt1.png" class="im1"><div class="imt">Online Store</div></div>
+	<div class="imd2"><img src="file:///Users/pradyumnasahu/Desktop/tye2.png" class="im2"><div class="imt">Blog</div></div>
+	<div class="imd1"><img src="file:///Users/pradyumnasahu/Desktop/hty3.png" class="im1"><div class="imt">Photography</div></div>
+	<div class="imd2"><img src="file:///Users/pradyumnasahu/Desktop/logt4.png" class="im2"><div class="imt">Beauty</div></div>
+	<div class="imd1"><img src="file:///Users/pradyumnasahu/Desktop/kyt6.png" class="im1"><div class="imt">Education</div></div>
+	<div class="imd2"><img src="file:///Users/pradyumnasahu/Desktop/cd7.png" class="im2"><div class="imt">Bussiness</div></div>
+	<div class="imd1"><img src="file:///Users/pradyumnasahu/Desktop/fd5.jpeg" class="im1"><div class="imt">Food Hub</div></div>
+	<div class="imt imd2">and more.....</div>
+</section>
+
+
+</body>
+</html>
