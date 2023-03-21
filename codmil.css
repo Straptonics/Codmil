@@ -28,7 +28,7 @@ copyright 2021 -2022 Codmil™ */
 	background-color: whitesmoke;
 }
 .dtg2 {
-	background-image: url('file:///Users/pradyumnasahu/Desktop/4o6vg.svg'); /* change here the link */ 
+	background-image: url('/4o6vg.svg'); /* change here the link */ 
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
